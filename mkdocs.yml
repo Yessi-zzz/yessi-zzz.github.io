@@ -1,4 +1,3 @@
 site_name: My Docs
 theme:
-  palette:
-    scheme: default
+  name: material
