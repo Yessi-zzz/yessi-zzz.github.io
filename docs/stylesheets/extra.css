@@ -1,0 +1,53 @@
+/* --- 1. 常规体 (Regular) --- */
+@font-face {
+  font-family: "LXGW Bright";
+  /* 重点看这里： ../ 表示退回到 docs 目录，然后再进入 LXGWBright 目录 */
+  src: url("../LXGWBright/LXGWBright-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* --- 2. 常规斜体 (Italic) --- */
+@font-face {
+  font-family: "LXGW Bright";
+  src: url("../LXGWBright/LXGWBright-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* --- 3. 中等粗体 (Medium) --- */
+@font-face {
+  font-family: "LXGW Bright";
+  src: url("../LXGWBright/LXGWBright-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* --- 4. 中等粗斜体 (Medium Italic) --- */
+@font-face {
+  font-family: "LXGW Bright";
+  src: url("../LXGWBright/LXGWBright-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* --- 5. 细体 (Light) --- */
+@font-face {
+  font-family: "LXGW Bright";
+  src: url("../LXGWBright/LXGWBright-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* --- 6. 细斜体 (Light Italic) --- */
+@font-face {
+  font-family: "LXGW Bright";
+  src: url("../LXGWBright/LXGWBright-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* --- 应用字体 --- */
+:root {
+  --md-text-font: "LXGW Bright";
+}

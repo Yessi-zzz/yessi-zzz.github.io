@@ -1,3 +1,43 @@
-site_name: My Docs
+site_name: Yessi的个人网站
+site_url: https://yessi-zzz.github.io/MyBlog/
+extra_css:
+  - stylesheets/extra.css
+
 theme:
   name: material
+  palette: 
+    scheme: slate
+    primary: orange
+    accent: pink
+  favicon: images/yeFavicon.png
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.path
+    - toc.follow
+    - search.suggest
+    - navigation.indexes
+
+
+extra:
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+
+plugins:
+  - social
+  - blog
+  - rss:
+      match_path: blog/posts/.* 
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
+        - tags 
