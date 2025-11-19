@@ -1,5 +1,5 @@
 site_name: Yessi的个人网站
-site_url: https://yessi-zzz.github.io/MyBlog/
+site_url: https://yessi-zzz.github.io/Yessi-zzz/
 extra_css:
   - stylesheets/extra.css
 
@@ -20,6 +20,7 @@ theme:
     - toc.follow
     - search.suggest
     - navigation.indexes 
+    - navigation.expand
 
 
 extra:
@@ -45,6 +46,8 @@ plugins:
       debug_grid: true
       debug_grid_step: 32
       debug_color: yellow
+  - meta:
+      enabled: true
   - blog
   - rss:
       match_path: blog/posts/.* 
@@ -55,5 +58,10 @@ plugins:
         - tags 
 
 nav:
-  - 我：
-    - 我的经历：我的经历.md
+  - '我':
+    - Yessi/index.md
+    - 我的桌面：Yessi/我的桌面/myDesktop.md
+    - 一个尝试: Yessi/helloWorld.md
+  - '博客':
+    - blog/index.md
+   
