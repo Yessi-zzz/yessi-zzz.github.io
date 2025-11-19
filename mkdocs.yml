@@ -1,5 +1,5 @@
 site_name: Yessi的个人网站
-site_url: https://yessi-zzz.github.io/Yessi-zzz/
+site_url: https://yessi-zzz.github.io/
 extra_css:
   - stylesheets/extra.css
 
@@ -60,8 +60,9 @@ plugins:
 nav:
   - '我':
     - Yessi/index.md
-    - 我的桌面：Yessi/我的桌面/myDesktop.md
-    - 一个尝试: Yessi/helloWorld.md
+    - 我的桌面: Yessi/我的桌面/myDesktop.md
   - '博客':
     - blog/index.md
+    - obsidian笔记: blog/post/Fibonacci Number.md
+    
    
