@@ -32,7 +32,6 @@ extra:
       make our documentation better.
 
 plugins:
-  - social
   - blog
   - rss:
       match_path: blog/posts/.* 
