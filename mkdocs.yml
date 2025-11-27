@@ -40,7 +40,7 @@ extra:
     - icon: fontawesome/brands/github 
       link: https://github.com/Yessi-zzz
     - icon: fontawesome/brands/bilibili
-      link: https://https://space.bilibili.com/290156913?spm_id_from=333.40138.0.0
+      link: https://space.bilibili.com/290156913?spm_id_from=333.40138.0.0
   consent:
     title: Cookie consent
     description: >- 
@@ -84,7 +84,7 @@ nav:
     - Yessi/index.md
     - Desktop & Everyday items:
       - 电脑: Yessi/Desktop/PC.md
-      - 手机: Yessi/Desktop/phone.md
+      - 手机&平板: Yessi/Desktop/phone.md
       - 耳机: Yessi/Desktop/earphone.md
       - 游戏&外设: Yessi/Desktop/game&eqs.md
       - 拍摄设备: Yessi/Desktop/shooting eqs.md

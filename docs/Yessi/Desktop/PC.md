@@ -18,4 +18,5 @@
 * GPU: NVIDIA GeForce RTX 5070Ti (12GB)
 * Display: NE16QDM-NZB
 * System: AtlasOS
+* 12934¥
 
