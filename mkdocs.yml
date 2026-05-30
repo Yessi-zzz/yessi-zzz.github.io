@@ -5,10 +5,23 @@ extra_css:
 
 theme:
   name: material
-  palette: 
-    scheme: slate
-    primary: orange
-    accent: pink
+  palette:
+    # 浅色模式（默认跟随系统：prefers-color-scheme: light）
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: orange
+      accent: pink
+      toggle:
+        icon: material/weather-sunny   # 太阳图标，点击切到深色
+        name: 切换到深色模式
+    # 深色模式（默认跟随系统：prefers-color-scheme: dark）
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: orange
+      accent: pink
+      toggle:
+        icon: material/weather-night   # 月亮图标，点击切回浅色
+        name: 切换到浅色模式
   features:
     - navigation.instant
     - navigation.instant.prefetch
@@ -22,6 +35,9 @@ theme:
     - search.highlight # 高亮搜索结果
     - navigation.indexes # 会有一个index页面,而不是打开tab的第一篇文章
     - navigation.expand # 核心功能：允许展开和收缩菜单
+    - navigation.footer # 页脚的上一页/下一页导航
+    - content.code.copy # 代码块右上角的一键复制按钮
+    - content.code.annotate # 代码块内可添加可点击的注释气泡
 
 # markdown扩展
 markdown_extensions:  # 支持数学公式 such as LaTeX, MathML, AsciiMath
@@ -30,6 +46,13 @@ markdown_extensions:  # 支持数学公式 such as LaTeX, MathML, AsciiMath
   - attr_list # 图像对齐功能
   - md_in_html
   - pymdownx.blocks.caption
+  # 代码高亮 + 围栏代码块（content.code.copy / annotate 的前提）
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite # 行内代码高亮
+  - pymdownx.superfences # 围栏代码块 + 代码注释支持
 
 extra_javascript:
   - javascripts/mathjax.js
