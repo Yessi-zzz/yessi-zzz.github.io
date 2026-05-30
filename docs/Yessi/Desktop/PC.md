@@ -4,7 +4,6 @@
 * CPU: Apple M2
 * RAM: 8 GB
 * Storage: Macintosh HD 256 GB
-* Serial Number: LQXTHX1F00
 * Displays: 13.3-inch (2560 x 1600)
 * System: macOS Tahoe Version 26.1
 
