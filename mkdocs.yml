@@ -53,6 +53,8 @@ markdown_extensions:  # 支持数学公式 such as LaTeX, MathML, AsciiMath
       pygments_lang_class: true
   - pymdownx.inlinehilite # 行内代码高亮
   - pymdownx.superfences # 围栏代码块 + 代码注释支持
+  - admonition # callout / 提示框 (!!! note 等)
+  - pymdownx.details # 可折叠 admonition (??? / ???+)
 
 extra_javascript:
   - javascripts/mathjax.js
@@ -125,4 +127,7 @@ nav:
       - DP/index.md
       - Two approaches to DP: DP/Two approaches of DP.md
       - Steps to solve DP problems: DP/Steps to solve a DP Problem.md
-      
+      - 快艇骰子研究:
+        - Rules: DP/yahtzee/Rules.md
+    - Tools:
+      - Git & GitHub: notes/tools/Git-GitHub.md

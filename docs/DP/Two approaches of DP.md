@@ -15,12 +15,14 @@ tags:
 - **Iterative** implementation
 - Entries are filled in a bottom-up manner from the smallest size to the final size.
 
-![[Fibonacci Tree image.png]]
->[!abstract]+ Differences
->Memoization(**Recursive**): *$F_{5}$* to *$F_{0}$* and *$F_{1}$*
->Tabulation(**Iterative**): *$F_{0}$* and *$F_{1}$* to *$F_{5}$*
+![Fibonacci Tree](../images/DP/fibonacci-tree.png)
 
-#### Example: [[Rod Cutting Problem]].
+???+ abstract "Differences"
+    Memoization(**Recursive**): *$F_{5}$* to *$F_{0}$* and *$F_{1}$*
+    Tabulation(**Iterative**): *$F_{0}$* and *$F_{1}$* to *$F_{5}$*
+
+#### Example: Rod Cutting Problem.
 
 [Memoization vs Tabulation](https://www.geeksforgeeks.org/dsa/tabulation-vs-memoization/)
-![[Contrast two approaches of DP image.png]]
+
+![Contrast two approaches of DP](../images/DP/contrast-two-approaches.png)

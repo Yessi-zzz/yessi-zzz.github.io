@@ -49,6 +49,7 @@ mkdocs-site/
 │   ├── notes/          # 笔记板块
 │   │   └── codes/      # 算法代码
 │   ├── DP/             # 动态规划笔记
+│   ├── images/         # 图片资源（按主题分子目录，如 images/DP/）
 │   ├── blog/           # 博客（含 RSS）
 │   ├── stylesheets/
 │   │   └── extra.css   # 自定义样式
@@ -57,6 +58,15 @@ mkdocs-site/
 │   └── LXGWBright/     # 霞鹜文楷字体文件
 └── .venv/              # Python 虚拟环境（不提交）
 ```
+
+## 图片规范
+
+- **统一存放**：所有图片放在 `docs/images/` 下，按主题分子目录（如 `docs/images/DP/`、`docs/images/math/`）。
+- **命名**：文件名一律小写、单词用连字符 `-` 连接，不留空格、不含中文或其他特殊字符。
+  - 例：`Fibonacci Tree image.png` → `fibonacci-tree.png`
+- **引用**：Markdown 中用标准语法 `![alt](相对路径)`，不使用 Obsidian 的 `![[...]]` 嵌入语法。
+  - 例（笔记在 `docs/DP/` 下）：`![Fibonacci Tree](../images/DP/fibonacci-tree.png)`
+- 从 Obsidian 迁移图片时**复制**（不移动），保留 Obsidian 原件。
 
 ## 主题配置
 
@@ -81,6 +91,7 @@ mkdocs-site/
 - **attr_list**：图像对齐等属性
 - **md_in_html**：HTML 块内嵌 Markdown
 - **pymdownx.blocks.caption**：图片标题
+- **admonition** + **pymdownx.details**：callout / 可折叠提示框（`!!! note` / `???+ note`）
 
 ## 依赖管理
 
