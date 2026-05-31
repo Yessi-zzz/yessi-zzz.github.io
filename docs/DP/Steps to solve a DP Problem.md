@@ -9,19 +9,20 @@ tags:
 3. Formulate state and transition relationship.
 4. Apply tabulation or memorization.
 
-### Step 1: How to classify a problem as a Dynamic Programming Problem? ([[Introduction to DP#^92e7f9]])
+### Step 1: How to classify a problem as a Dynamic Programming Problem? (见 Introduction to DP)
 
 - Typically, all the problems that require **maximizing or minimizing** certain quantities or counting problems that say to count the arrangements under certain conditions or certain probability problems can be solved by using Dynamic Programming.
 - **All** dynamic programming problems satisfy the *overlapping subproblems* property and **most of the classic** Dynamic programming problems also satisfy the *optimal substructure* property. Once we observe these properties in a given problem be sure that it can be solved using Dynamic Programming.
 
 ### Step 2: Deciding the state
 
-> [!important]
-> Dynamic Programming problems are all about the ***state*** and its ***transition***.
+!!! important
+    Dynamic Programming problems are all about the ***state*** and its ***transition***.
+
 #### state: 
 A state can be defined as the set of **parameters** that can uniquely identify a certain position or standing in the given problem. This set of parameters should be as small as possible to reduce state space.
 
-#### Example: [[Knapsack Problem]]
+#### Example: Knapsack Problem
 Here, we define our state using two parameters: 
 *index* and *weight* (dp[index][weight]). These two parameters work together to uniquely identify each subproblem we need to solve.
 
@@ -54,34 +55,34 @@ Assume that the result for n = 1, 2, 3, 4, 5, 6
 Let us say we know the result for:  
 state (n = 1), state (n = 2), state (n = 3) ......... state (n = 6)   
 Now, we wish to know the result of the state (n = 7). we can only add 1, 3, and 5. Now we can get a sum total of 7 in the following 3 ways:
->[!important]+ Analysis
->1) Adding 1 to all possible combinations of *state (n = 6)*
-> Eg : [(1 + 1 + 1 + 1 + 1 + 1) + 1]   
-> [(1 + 1 + 1 + 3) + 1]   
-> [(1 + 1 + 3 + 1) + 1]   
-> [(1 + 3 + 1 + 1) + 1]   
-> [(3 + 1 + 1 + 1) + 1]   
-> [(3 + 3) + 1]   
-> [(1 + 5) + 1]   
-> [(5 + 1) + 1] 
-> 
-> 2) Adding 3 to all possible combinations of *state (n = 4)*
-> [(1 + 1 + 1 + 1) + 3]   
-> [(1 + 3) + 3]   
-> [(3 + 1) + 3] 
-> 
-> 3) Adding 5 to all possible combinations of *state(n = 2)*
-> [(1 + 1) + 5]
-> 
-> __(Note how it sufficient to add only on the right-side - all the add-from-left-side cases are covered, either in the same state, or another, e.g. [1 + (1 + 1 + 1 + 3)]  is not needed in state (n=6) because it's covered by state (n = 4) [(1 + 1 + 1 + 1) + 3])__
-> 
-> Therefore, we can say that result for   
-> state(7) = state (6) + state (4) + state (2)   
-> OR  
-> state(7) = state (7-1) + state (7-3) + state (7-5)  
-> In general,   
-> ***state(n) = state(n-1) + state(n-3) + state(n-5)***
-> 
+???+ important "Analysis"
+    1) Adding 1 to all possible combinations of *state (n = 6)*
+    Eg : [(1 + 1 + 1 + 1 + 1 + 1) + 1]   
+    [(1 + 1 + 1 + 3) + 1]   
+    [(1 + 1 + 3 + 1) + 1]   
+    [(1 + 3 + 1 + 1) + 1]   
+    [(3 + 1 + 1 + 1) + 1]   
+    [(3 + 3) + 1]   
+    [(1 + 5) + 1]   
+    [(5 + 1) + 1] 
+
+    2) Adding 3 to all possible combinations of *state (n = 4)*
+    [(1 + 1 + 1 + 1) + 3]   
+    [(1 + 3) + 3]   
+    [(3 + 1) + 3] 
+
+    3) Adding 5 to all possible combinations of *state(n = 2)*
+    [(1 + 1) + 5]
+
+    __(Note how it sufficient to add only on the right-side - all the add-from-left-side cases are covered, either in the same state, or another, e.g. [1 + (1 + 1 + 1 + 3)]  is not needed in state (n=6) because it's covered by state (n = 4) [(1 + 1 + 1 + 1) + 3])__
+
+    Therefore, we can say that result for   
+    state(7) = state (6) + state (4) + state (2)   
+    OR  
+    state(7) = state (7-1) + state (7-3) + state (7-5)  
+    In general,   
+    ***state(n) = state(n-1) + state(n-3) + state(n-5)***
+
 ```python
 # Python program to express
 # n as sum of 1, 3, 5.

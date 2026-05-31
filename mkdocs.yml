@@ -123,11 +123,14 @@ nav:
       - Dp codes:
         - Fibonacci Sequence: notes/codes/Fibonacci Number.md
         - Knapsack Problem: notes/codes/Knapsack Problem.md
+        - Rod Cutting Problem: notes/codes/Rod Cutting Problem.md
     - Dynamic Programming:
       - DP/index.md
       - Two approaches to DP: DP/Two approaches of DP.md
       - Steps to solve DP problems: DP/Steps to solve a DP Problem.md
       - 快艇骰子研究:
         - Rules: DP/yahtzee/Rules.md
+        - Exercise1: DP/yahtzee/Exercise1.md
+        - HW1: DP/yahtzee/HW1.md
     - Tools:
       - Git & GitHub: notes/tools/Git-GitHub.md

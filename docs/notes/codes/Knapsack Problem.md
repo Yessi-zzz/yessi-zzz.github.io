@@ -10,16 +10,17 @@ tags:
 Given *n* items where each item has some weight and profit associated with it and also given a bag with capacity *W*, i.e., the bag can hold at most *W* weight in it. The task is to put the items into the bag such that the sum of profits associated with them is the maximum possible. 
 
 >[!warning]+ **Note:** 
->The constraint here is we can either put an item completely into the bag or cannot put it at all [It is not possible to put a part of an item into the bag].
+    The constraint here is we can either put an item completely into the bag or cannot put it at all [It is not possible to put a part of an item into the bag].
 
 ### Naive Aproach
-![[Knapsack Problem image 1.png]]
->[!warning]+ **Note**:
->The above function using recursion computes the same subproblems again and again
+![Knapsack Problem 1](../../images/DP/knapsack-1.png)
+
+???+ warning "**Note**:"
+    The above function using recursion computes the same subproblems again and again
 
 
 ### [Better Approach 1] Using Top-Down DP (Memoization)- O(n x W) Time and Space
-![[Knapsack Problem image 2.png]]
+![Knapsack Problem 2](../../images/DP/knapsack-2.png)
 If we get a subproblem the first time, we can solve this problem by creating a 2-D array that can store a particular state (n, w). Now if we come across the same state (n, w) again instead of calculating it i again we can directly return its result stored in the table in constant time.
 ```python
 # Returns the maximum value that
