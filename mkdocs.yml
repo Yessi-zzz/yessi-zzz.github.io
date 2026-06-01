@@ -132,5 +132,12 @@ nav:
         - Rules: DP/yahtzee/Rules.md
         - Exercise1: DP/yahtzee/Exercise1.md
         - HW1: DP/yahtzee/HW1.md
+    - Math:
+      - Calculus:
+        - Differential Equations: Math/Calculus/Differential Equation/Introduction to Differential Equations.md
+        - Techniques of Integration: Math/Calculus/Integrals/Techniques of Integration.md
+      - Linear Algebra:
+        - Vectors and Matrices: Math/Linear Algebra/Vectors and Matrices.md
     - Tools:
       - Git & GitHub: notes/tools/Git-GitHub.md
+      - Obsidian Writing Principle: notes/tools/Obsidian Writing Principle.md
