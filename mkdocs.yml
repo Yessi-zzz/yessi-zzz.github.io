@@ -138,6 +138,11 @@ nav:
         - Techniques of Integration: Math/Calculus/Integrals/Techniques of Integration.md
       - Linear Algebra:
         - Vectors and Matrices: Math/Linear Algebra/Vectors and Matrices.md
+      - Probability and Stochastic Processes:
+        - Axioms of Probability: Math/Probability and Stochastic Processes/1. Axioms of Probability.md
+        - Combinatorial Methods: Math/Probability and Stochastic Processes/2. Combinatorial Methods.md
+        - Conditional Probability and Independence: Math/Probability and Stochastic Processes/3. Conditional Probability and Independence.md
+        - Distribution Functions and Discrete Random Variables: Math/Probability and Stochastic Processes/4. Distribution Functions and Discrete Random Variables.md
     - Tools:
       - Git & GitHub: notes/tools/Git-GitHub.md
       - Obsidian Writing Principle: notes/tools/Obsidian Writing Principle.md
