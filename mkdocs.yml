@@ -143,6 +143,10 @@ nav:
         - Combinatorial Methods: Math/Probability and Stochastic Processes/2. Combinatorial Methods.md
         - Conditional Probability and Independence: Math/Probability and Stochastic Processes/3. Conditional Probability and Independence.md
         - Distribution Functions and Discrete Random Variables: Math/Probability and Stochastic Processes/4. Distribution Functions and Discrete Random Variables.md
+        - Special Discrete Distributions: Math/Probability and Stochastic Processes/5. Special Discrete Distributions.md
+        - Continuous Random Variables: Math/Probability and Stochastic Processes/6. Continuous Random Variables.md
+        - Special Continuous Distributions: Math/Probability and Stochastic Processes/7. Special Continuous Distributions.md
+        - Bivariate Distributions: Math/Probability and Stochastic Processes/8. Bivariate Distributions.md
     - Tools:
       - Git & GitHub: notes/tools/Git-GitHub.md
       - Obsidian Writing Principle: notes/tools/Obsidian Writing Principle.md
